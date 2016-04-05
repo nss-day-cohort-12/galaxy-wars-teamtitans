@@ -1,5 +1,7 @@
 # Galaxy Wars
 
+Your job is to build some spare-faring species that evolved on one of five star types. Your species will compete against each other for resources in their solar system, and end up in a conflict that will be winner-take-all.
+
 ## Star Types
 
 1. Supergiant
