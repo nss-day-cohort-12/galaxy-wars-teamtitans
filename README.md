@@ -2,6 +2,12 @@
 
 Your job is to build some space-faring species that evolved on planets around one of five star types. Your species will compete against each other for resources in their solar system, and end up in a conflict that will be winner-take-all.
 
+##Group: Team Titan
+- Martin Cross @github/chiozzo
+- Alexander Elliott @github/puhrestow
+- Jen Solima @github/craftylildev
+- Jason Weakley @github/JasonWeakley
+
 ## Star Types
 
 1. Supergiant
