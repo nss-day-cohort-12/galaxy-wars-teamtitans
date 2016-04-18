@@ -4,14 +4,17 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Galaxy_Wars.Species
+namespace Galaxy_Wars
 {
   interface IWarrior
   {
-    // attack bonus
-    Species BerserkerBonus(int battleYear);
+    // begin attack bonus
+    void beginBerserkerBonus();
+
+    // end attack bonus
+    void endBerserkerBonus();
 
     // health bonus
-    int TacticalBonus(int battleYear);
+    Population TacticalBonus(Population population);
   }
 }
