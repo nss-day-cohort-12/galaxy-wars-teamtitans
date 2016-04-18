@@ -48,6 +48,7 @@
     <Compile Include="Species\IWarrior.cs" />
     <Compile Include="Species\Species.cs" />
     <Compile Include="Species\Wookie.cs" />
+    <Compile Include="Ships\BaseShip.cs" />
     <Compile Include="Ships\NoMoon.cs" />
     <Compile Include="Ships\MilleniumFalcon.cs" />
     <Compile Include="Ships\FurBucket.cs" />
