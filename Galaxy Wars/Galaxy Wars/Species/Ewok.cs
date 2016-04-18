@@ -38,6 +38,7 @@ namespace Galaxy_Wars.Species
       galaxyPopulation.saiyanPopulation -= galaxyPopulation.saiyanPopulation * 0.01;
       galaxyPopulation.ewokPopulation += galaxyPopulation.wookiePopulation * 0.01;
       galaxyPopulation.wookiePopulation -= galaxyPopulation.wookiePopulation * 0.01;
+      return galaxyPopulation;
     }
 
   }
