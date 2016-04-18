@@ -45,13 +45,18 @@
     <Compile Include="Population.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Species\Saiyan.cs" />
-    <Compile Include="Species\ISpaceFaring.cs" />
     <Compile Include="Species\IWarrior.cs" />
     <Compile Include="Species\Species.cs" />
     <Compile Include="Species\Wookie.cs" />
-    <Compile Include="Species\IReligious.cs" />
-    <Compile Include="Species\Ewok.cs" />
+    <Compile Include="Ships\BaseShip.cs" />
+    <Compile Include="Ships\NoMoon.cs" />
+    <Compile Include="Ships\MilleniumFalcon.cs" />
+    <Compile Include="Ships\FurBucket.cs" />
+    <Compile Include="Ships\SpiritOfEndor.cs" />
+    <Compile Include="Ships\AttackCapsule.cs" />
+    <Compile Include="Ships\DefenseCapsule.cs" />
+    <Compile Include="Ships\IAttackShip.cs" />
+    <Compile Include="Ships\IDefenseShip.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
