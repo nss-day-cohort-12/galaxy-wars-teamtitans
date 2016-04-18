@@ -32,9 +32,12 @@ namespace Galaxy_Wars
 
     public void endBerserkerBonus()
     {
-      this.attackBonusActive = false;
-      this.rage -= 1;
-      this.stealth -= 1;
+      if (attackBonusActive)
+      {
+        this.attackBonusActive = false;
+        this.rage -= 1;
+        this.stealth -= 1;
+      }
     }
 
     public Population TacticalBonus(Population galaxyPopulation)
