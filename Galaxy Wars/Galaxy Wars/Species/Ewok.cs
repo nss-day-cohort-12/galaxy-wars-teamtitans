@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Galaxy_Wars.Species
+namespace Galaxy_Wars
 {
   public class Ewok : Species, IReligious
   {
@@ -32,7 +32,7 @@ namespace Galaxy_Wars.Species
       this.communication -= 5;
     }
 
-    public Population ReligiousBonus(Population galaxyPopulation)
+    public Population FaithBonus(Population galaxyPopulation)
     {
       galaxyPopulation.ewokPopulation += galaxyPopulation.saiyanPopulation * 0.01;
       galaxyPopulation.saiyanPopulation -= galaxyPopulation.saiyanPopulation * 0.01;

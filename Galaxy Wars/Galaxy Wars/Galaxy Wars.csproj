@@ -50,6 +50,8 @@
     <Compile Include="Species\IWarrior.cs" />
     <Compile Include="Species\Species.cs" />
     <Compile Include="Species\Wookie.cs" />
+    <Compile Include="Species\IReligious.cs" />
+    <Compile Include="Species\Ewok.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
