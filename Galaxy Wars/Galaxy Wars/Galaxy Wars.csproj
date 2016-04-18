@@ -44,7 +44,9 @@
   <ItemGroup>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Species\IWarrior.cs" />
     <Compile Include="Species\Species.cs" />
+    <Compile Include="Species\Wookie.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
