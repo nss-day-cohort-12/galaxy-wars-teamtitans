@@ -22,9 +22,12 @@ namespace Galaxy_Wars
 
     public void beginBerserkerBonus()
     {
-      this.attackBonusActive = true;
-      this.rage += 1;
-      this.stealth += 1;
+      if (!attackBonusActive)
+      {
+        this.attackBonusActive = true;
+        this.rage += 1;
+        this.stealth += 1;
+      }
     }
 
     public void endBerserkerBonus()
