@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Galaxy_Wars
 {
-  class Wookie : Species, IWarrior
+  public class Wookie : Species, IWarrior
   {
     public Wookie()
     {

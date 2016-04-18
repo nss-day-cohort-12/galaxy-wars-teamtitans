@@ -5,6 +5,8 @@ VisualStudioVersion = 14.0.24720.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Galaxy Wars", "Galaxy Wars\Galaxy Wars.csproj", "{3E70A7EE-599E-4BDC-BF3A-C6CD9BCE088B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GalaxyWarsTests", "GalaxyWarsTests\GalaxyWarsTests.csproj", "{7F78EAFD-DA60-4355-AD81-768224B9E93A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{3E70A7EE-599E-4BDC-BF3A-C6CD9BCE088B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3E70A7EE-599E-4BDC-BF3A-C6CD9BCE088B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3E70A7EE-599E-4BDC-BF3A-C6CD9BCE088B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7F78EAFD-DA60-4355-AD81-768224B9E93A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7F78EAFD-DA60-4355-AD81-768224B9E93A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7F78EAFD-DA60-4355-AD81-768224B9E93A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7F78EAFD-DA60-4355-AD81-768224B9E93A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
