@@ -48,6 +48,14 @@
     <Compile Include="Species\IWarrior.cs" />
     <Compile Include="Species\Species.cs" />
     <Compile Include="Species\Wookie.cs" />
+    <Compile Include="Ships\NoMoon.cs" />
+    <Compile Include="Ships\MilleniumFalcon.cs" />
+    <Compile Include="Ships\FurBucket.cs" />
+    <Compile Include="Ships\SpiritOfEndor.cs" />
+    <Compile Include="Ships\AttackCapsule.cs" />
+    <Compile Include="Ships\DefenseCapsule.cs" />
+    <Compile Include="Ships\IAttackShip.cs" />
+    <Compile Include="Ships\IDefenseShip.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
