@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Galaxy_Wars
 {
-  class Population
+  public class Population
   {
     private int _saiyanPopulation = 1000000;
     public int saiyanPopulation
