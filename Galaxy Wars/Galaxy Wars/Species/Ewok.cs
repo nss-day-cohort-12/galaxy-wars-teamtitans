@@ -22,13 +22,13 @@ namespace Galaxy_Wars.Species
 
     public void beginEncryptBonus()
     {
-      this.encryptBonusActive = true;
+      this.attackBonusActive = true;
       this.communication += 5;
     }
 
     public void endEncryptBonus()
     {
-      this.encryptBonusActive = false;
+      this.attackBonusActive = false;
       this.communication -= 5;
     }
 
