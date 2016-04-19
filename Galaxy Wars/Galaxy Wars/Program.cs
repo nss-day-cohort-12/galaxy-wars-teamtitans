@@ -28,10 +28,23 @@ namespace Galaxy_Wars
 
       // LET THE BATTLE COMMENCE
       bool keepPlaying = true;
+      bool isBackwardsCycle = false;
       while (keepPlaying)
       {
         BattleWorld.roundRobinRoyale();
+        BattleWorld.weightedBattle(isBackwardsCycle);
         Year++;
+        if (Year % 25 == 0)
+        {
+          if (isBackwardsCycle)
+          {
+            isBackwardsCycle = false;
+          }
+          else
+          {
+            isBackwardsCycle = true;
+          }
+        }
         if (
           (BattleWorld.playerOne.isExtinct && BattleWorld.playerTwo.isExtinct) ||
           (BattleWorld.playerTwo.isExtinct && BattleWorld.playerThree.isExtinct) ||

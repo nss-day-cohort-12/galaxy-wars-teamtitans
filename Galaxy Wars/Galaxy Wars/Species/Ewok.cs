@@ -18,7 +18,8 @@ namespace Galaxy_Wars
       this.rage += 2;
       this.luck += 7;
       this.communication += 3;
-      this.speciesType = "Ewok";
+      this.speciesType = "religion";
+      this.speciesName = "Ewoks";
     }
 
     public void beginEncryptBonus()

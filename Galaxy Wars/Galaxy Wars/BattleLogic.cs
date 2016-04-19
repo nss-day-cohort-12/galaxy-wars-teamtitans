@@ -64,10 +64,11 @@ namespace Galaxy_Wars
 
     public void roundRobinRoyale()
     {
+      int killCount = 0;
       // Player 1 attacks Player 2
       if (playerTwo.population > 0)
       {
-        playerTwo.population -= calculateKillCount(
+        killCount = calculateKillCount(
           playerOne.calculateAttackRating(),
           playerTwo.calculateDefenseRating()
           );
@@ -76,6 +77,8 @@ namespace Galaxy_Wars
       {
         playerTwo.isExtinct = true;
       }
+
+      playerTwo.population -= killCount;
 
       // Player 1 attacks Player 3
       if (playerThree.population > 0)
@@ -140,6 +143,45 @@ namespace Galaxy_Wars
       else
       {
         playerTwo.isExtinct = true;
+      }
+    }
+
+    public void weightedBattle(bool isBackwardsCycle)
+    {
+      int killCount = 0;
+      if (playerOne.speciesType == "religion" && playerTwo.speciesType == "science" && isBackwardsCycle)
+      {
+        int extraKills = (killCount / 100) * 2;
+        killCount += extraKills;
+        playerOne.population -= killCount;
+      }
+      else if (playerOne.speciesType == "science" && playerTwo.speciesType == "religion" && !isBackwardsCycle)
+      {
+        int extraKills = (killCount / 100) * 2;
+        killCount += extraKills;
+        playerOne.population -= killCount;
+      }
+      else if (playerOne.speciesType == "warfare" && playerTwo.speciesType == "religion" && isBackwardsCycle)
+      {
+        int extraKills = (killCount / 100) * 2;
+        killCount += extraKills;
+        playerTwo.population -= killCount;
+      }
+      else if (playerOne.speciesType == "religion" && playerTwo.speciesType == "warfare" && !isBackwardsCycle)
+      {
+        int extraKills = (killCount / 100) * 2;
+        killCount += extraKills;
+        playerTwo.population -= killCount;
+      }
+      else if (playerOne.speciesType == "science" && playerTwo.speciesType == "warfare" && isBackwardsCycle)
+      {
+        int extraKills = (killCount / 100) * 2;
+        killCount += extraKills;
+      }
+      else if (playerOne.speciesType == "warfare" && playerTwo.speciesType == "science" && !isBackwardsCycle)
+      {
+        int extraKills = (killCount / 100) * 2;
+        killCount += extraKills;
       }
     }
   }
