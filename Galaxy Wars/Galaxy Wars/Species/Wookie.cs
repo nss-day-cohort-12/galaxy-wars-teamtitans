@@ -18,7 +18,8 @@ namespace Galaxy_Wars
       this.rage += 4;
       this.luck += 5;
       this.communication += 4;
-      this.speciesType = "wookie";
+      this.speciesType = "warfare";
+      this.speciesName = "Wookies";
     }
 
     public void beginBerserkerBonus()

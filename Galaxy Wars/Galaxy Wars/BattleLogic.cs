@@ -142,5 +142,44 @@ namespace Galaxy_Wars
         playerTwo.isExtinct = true;
       }
     }
+
+    public void weightedBattle(bool isBackwardsCycle)
+    {
+      int killCount = 0;
+      if (playerOne.speciesType == "religion" && playerTwo.speciesType == "science" && isBackwardsCycle)
+      {
+        int extraKills = (killCount / 100) * 2;
+        killCount += extraKills;
+        playerOne.population -= killCount;
+      }
+      else if (playerOne.speciesType == "science" && playerTwo.speciesType == "religion" && !isBackwardsCycle)
+      {
+        int extraKills = (killCount / 100) * 2;
+        killCount += extraKills;
+        playerOne.population -= killCount;
+      }
+      else if (playerOne.speciesType == "warfare" && playerTwo.speciesType == "religion" && isBackwardsCycle)
+      {
+        int extraKills = (killCount / 100) * 2;
+        killCount += extraKills;
+        playerTwo.population -= killCount;
+      }
+      else if (playerOne.speciesType == "religion" && playerTwo.speciesType == "warfare" && !isBackwardsCycle)
+      {
+        int extraKills = (killCount / 100) * 2;
+        killCount += extraKills;
+        playerTwo.population -= killCount;
+      }
+      else if (playerOne.speciesType == "science" && playerTwo.speciesType == "warfare" && isBackwardsCycle)
+      {
+        int extraKills = (killCount / 100) * 2;
+        killCount += extraKills;
+      }
+      else if (playerOne.speciesType == "warfare" && playerTwo.speciesType == "science" && !isBackwardsCycle)
+      {
+        int extraKills = (killCount / 100) * 2;
+        killCount += extraKills;
+      }
+    }
   }
 }
