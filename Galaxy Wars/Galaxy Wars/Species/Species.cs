@@ -14,6 +14,49 @@ namespace Galaxy_Wars
     public bool attackBonusActive { get; set; }
     public bool healthBonusActive { get; set; }
 
+    public int population { get; set; }
+    public bool isExtinct { get; set; }
+
+    public Species()
+    {
+      this.attackBonusActive = false;
+      this.healthBonusActive = false;
+      this.population = 1000000;
+      this.isExtinct = false;
+    }
+
+    public int calculateAttackRating()
+    {
+      Random randomObject = new Random();
+      int attackRating = 0;
+      /*
+      .Next() is calling from arbitrary ranges and can be adjusted for more/less variance.
+      */
+      attackRating += this.intelligence * randomObject.Next(5, 25);
+      attackRating += this.strength * randomObject.Next(5, 25);
+      attackRating += this.stealth * randomObject.Next(5, 25);
+      attackRating += this.rage * randomObject.Next(5, 25);
+      attackRating += this.luck * randomObject.Next(5, 25);
+      attackRating += this.communication * randomObject.Next(5, 25);
+      return attackRating;
+    }
+
+    public int calculateDefenseRating()
+    {
+      Random randomObject = new Random();
+      int defenseRating = 0;
+      /*
+      .Next() is calling from arbitrary ranges and can be adjusted for more/less variance.
+      */
+      defenseRating += this.intelligence * randomObject.Next(5, 25);
+      defenseRating += this.charisma * randomObject.Next(5, 25);
+      defenseRating += this.health * randomObject.Next(5, 25);
+      defenseRating += this.stealth * randomObject.Next(5, 25);
+      defenseRating += this.luck * randomObject.Next(5, 25);
+      defenseRating += this.communication * randomObject.Next(5, 25);
+      return defenseRating;
+    }
+
     private int _intelligence = 0;
     public int intelligence
     {

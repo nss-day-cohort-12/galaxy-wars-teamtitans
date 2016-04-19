@@ -18,6 +18,7 @@ namespace Galaxy_Wars
       this.rage += 2;
       this.luck += 7;
       this.communication += 3;
+      this.speciesType = "Ewok";
     }
 
     public void beginEncryptBonus()
@@ -34,10 +35,10 @@ namespace Galaxy_Wars
 
     public Population FaithBonus(Population galaxyPopulation)
     {
-      galaxyPopulation.ewokPopulation += galaxyPopulation.saiyanPopulation * 0.01;
-      galaxyPopulation.saiyanPopulation -= galaxyPopulation.saiyanPopulation * 0.01;
-      galaxyPopulation.ewokPopulation += galaxyPopulation.wookiePopulation * 0.01;
-      galaxyPopulation.wookiePopulation -= galaxyPopulation.wookiePopulation * 0.01;
+      galaxyPopulation.ewokPopulation += (int)(galaxyPopulation.saiyanPopulation * 0.01);
+      galaxyPopulation.saiyanPopulation -= (int)(galaxyPopulation.saiyanPopulation * 0.01);
+      galaxyPopulation.ewokPopulation += (int)(galaxyPopulation.wookiePopulation * 0.01);
+      galaxyPopulation.wookiePopulation -= (int)(galaxyPopulation.wookiePopulation * 0.01);
       return galaxyPopulation;
     }
 
