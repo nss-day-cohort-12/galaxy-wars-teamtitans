@@ -18,6 +18,8 @@ namespace Galaxy_Wars
             this.rage += 7;
             this.luck += 1;
             this.communication += 6;
+      this.speciesType = "science";
+      this.speciesName = "Saiyans";
         }
 
         public void beginsupersaiyanbonus()

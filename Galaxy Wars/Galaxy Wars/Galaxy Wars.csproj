@@ -62,6 +62,8 @@
     <Compile Include="Ships\DefenseCapsule.cs" />
     <Compile Include="Ships\IAttackShip.cs" />
     <Compile Include="Ships\IDefenseShip.cs" />
+    <Compile Include="Storyline\Storyline.cs" />
+    <Compile Include="BattleLogic.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
