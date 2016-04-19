@@ -18,20 +18,27 @@ namespace Galaxy_Wars
       this.rage += 4;
       this.luck += 5;
       this.communication += 4;
+      this.speciesType = "wookie";
     }
 
     public void beginBerserkerBonus()
     {
-      this.attackBonusActive = true;
-      this.rage += 1;
-      this.stealth += 1;
+      if (this.attackBonusActive == false)
+      {
+        this.attackBonusActive = true;
+        this.rage += 1;
+        this.stealth += 1;
+      }
     }
 
     public void endBerserkerBonus()
     {
-      this.attackBonusActive = false;
-      this.rage -= 1;
-      this.stealth -= 1;
+      if (this.attackBonusActive == true)
+      {
+        this.attackBonusActive = false;
+        this.rage -= 1;
+        this.stealth -= 1;
+      }
     }
 
     public Population TacticalBonus(Population galaxyPopulation)
