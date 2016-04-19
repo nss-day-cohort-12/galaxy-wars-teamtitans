@@ -64,11 +64,10 @@ namespace Galaxy_Wars
 
     public void roundRobinRoyale()
     {
-      int killCount = 0;
       // Player 1 attacks Player 2
       if (playerTwo.population > 0)
       {
-        killCount = calculateKillCount(
+        playerTwo.population -= calculateKillCount(
           playerOne.calculateAttackRating(),
           playerTwo.calculateDefenseRating()
           );
@@ -77,8 +76,6 @@ namespace Galaxy_Wars
       {
         playerTwo.isExtinct = true;
       }
-
-      playerTwo.population -= killCount;
 
       // Player 1 attacks Player 3
       if (playerThree.population > 0)
